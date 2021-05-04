@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
+Developed wireframes further using Figma for responsive layout:
+![image](https://user-images.githubusercontent.com/28934521/117042094-298a3d80-acd1-11eb-86aa-b8a644026ad8.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
