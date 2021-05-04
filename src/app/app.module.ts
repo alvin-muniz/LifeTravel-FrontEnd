@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CitiesComponent } from './cities/cities.component';
 import { CitiesListComponent } from './cities/cities-list/cities-list.component';
 import { CitiesDetailViewComponent } from './cities/cities-detail-view/cities-detail-view.component';
+import { CitiesListCardComponent } from './cities/cities-list/cities-list-card/cities-list-card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CitiesDetailViewComponent } from './cities/cities-detail-view/cities-de
     CitiesComponent,
     CitiesListComponent,
     CitiesDetailViewComponent,
+    CitiesListCardComponent,
   ],
   imports: [
     BrowserModule,
