@@ -19,6 +19,8 @@ D7DA48
 F5B926
 F43A1D
 
+Using TypeScale.com, I implemented a basic type system based off of perfect fifths.
+
 
 ## Development server
 
