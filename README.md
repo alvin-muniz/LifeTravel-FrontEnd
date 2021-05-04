@@ -6,6 +6,20 @@ Developed wireframes further using Figma for responsive layout:
 ![image](https://user-images.githubusercontent.com/28934521/117042094-298a3d80-acd1-11eb-86aa-b8a644026ad8.png)
 
 
+
+www.colormind.io
+
+![image](https://user-images.githubusercontent.com/28934521/117056450-eedcd100-ace1-11eb-9d9d-92358d9f5d64.png)
+
+Color pallete:
+Color Mind Color Picker I chose:
+hex: 123B44
+0C9581
+D7DA48
+F5B926
+F43A1D
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
