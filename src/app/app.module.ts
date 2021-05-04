@@ -8,6 +8,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomeComponent } from './home/home.component';
 import { CitiesComponent } from './cities/cities.component';
+import { CitiesListComponent } from './cities/cities-list/cities-list.component';
+import { CitiesDetailViewComponent } from './cities/cities-detail-view/cities-detail-view.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CitiesComponent } from './cities/cities.component';
     LandingPageComponent,
     HomeComponent,
     CitiesComponent,
+    CitiesListComponent,
+    CitiesDetailViewComponent,
   ],
   imports: [
     BrowserModule,

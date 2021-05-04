@@ -38,6 +38,9 @@ data when a city is typed into the form field.
 We put the browse cities list as a secondar visual element to provide the 
 option to those who are wanting it.
 
+For my design i'm segmenting the view into a cities list as well as a citiy 
+detail view. Each will pull from the other
+
 
 Sprint 2: HomePage
 A user should be able to:

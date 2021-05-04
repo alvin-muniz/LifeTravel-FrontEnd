@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
+  cities: string[] = [
+    'Murphysboro',
+    'Alpharetta',
+    'Greensburg',
+    'Mobile'
+    ];
+
+
   constructor() { }
 
   ngOnInit(): void {

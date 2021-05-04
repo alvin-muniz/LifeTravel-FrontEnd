@@ -6,7 +6,8 @@ import {CitiesComponent} from './cities/cities.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: LandingPageComponent },
+  // { path: 'home', component: HomeComponent },
   { path: 'cities', component: CitiesComponent }
 ];
 
