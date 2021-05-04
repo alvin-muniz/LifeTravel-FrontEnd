@@ -14,7 +14,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
