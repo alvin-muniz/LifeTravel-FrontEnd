@@ -7,7 +7,9 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CitiesListComponent implements OnInit {
 
-  @Input() cities: string[];
+  @Input() cities: any[];
+
+  get message(): string { return `this list is size of ${this.cities.length}`; }
 
   constructor() { }
 

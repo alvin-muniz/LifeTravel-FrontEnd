@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
-  cities: string[] = [
-    'Murphysboro',
-    'Alpharetta',
-    'Greensburg',
-    'Mobile'
-    ];
+  cities: any[] = [
+    {
+      name: 'Murphysboro',
+    zip: '38299'
+    }];
 
 
   constructor() { }
