@@ -14,11 +14,34 @@
 h1 {
   padding: 0;
   margin: 0 0 0 0;
-  font-size: @zero-hierarchy;
+  font-size: @first-hierarchy;
 }
 
 h2 {
-  font-size: @first-hierarchy;
+  font-size: @second-heirarchy;
   margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: @second-heirarchy;
+    margin:
+      0 //top
+      @mobile-device-margin //left && right
+      0;//bottom
+
+  }
+
+  h2 {
+    font-size: @third-heirarchy;
+    margin:
+      0 //top
+      @mobile-device-margin //left && right
+      0;//bottom
+
+  }
+  main {
+    margin: 32px;
+  }
 }
 
