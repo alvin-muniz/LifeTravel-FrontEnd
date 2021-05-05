@@ -10,7 +10,19 @@ export class CitiesComponent implements OnInit {
   cities: any[] = [
     {
       name: 'Murphysboro',
-    zip: '38299'
+      zip: '38299'
+    },
+    {
+      name: 'Murphysboro',
+      zip: '38299'
+    },
+    {
+      name: 'Murphysboro',
+      zip: '38299'
+    },
+    {
+      name: 'Murphysboro',
+      zip: '38299'
     }];
 
 
