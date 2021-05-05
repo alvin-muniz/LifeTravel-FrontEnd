@@ -1,7 +1,10 @@
 <header>
-  <div appPopoutMenu class="menu-button">X</div>
+  <div >
+    <button class="popout-menu" (click)="openMenu($event)">x</button>
+    <app-header-popout-menu></app-header-popout-menu>
+  </div>
   <div>wayfarer</div>
-  <nav *ngFor="let link of links">
+  <nav class = "large-device-nav" *ngFor="let link of links">
 <!--      <a routerLink="{{link}}" href="#">{{link}}</a>-->
   </nav>
 </header>
