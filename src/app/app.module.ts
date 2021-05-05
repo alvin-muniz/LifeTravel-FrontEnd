@@ -11,6 +11,7 @@ import { CitiesComponent } from './cities/cities.component';
 import { CitiesListComponent } from './cities/cities-list/cities-list.component';
 import { CitiesDetailViewComponent } from './cities/cities-detail-view/cities-detail-view.component';
 import { CitiesListCardComponent } from './cities/cities-list/cities-list-card/cities-list-card.component';
+import { PopoutMenuDirective } from './header/popout-menu.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CitiesListCardComponent } from './cities/cities-list/cities-list-card/c
     CitiesListComponent,
     CitiesDetailViewComponent,
     CitiesListCardComponent,
+    PopoutMenuDirective,
   ],
   imports: [
     BrowserModule,
