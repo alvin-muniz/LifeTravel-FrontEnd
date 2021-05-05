@@ -11,7 +11,7 @@ export class HeaderPopoutMenuComponent implements OnInit {
   @HostBinding('style.left') x = '0px';
   @HostBinding('style.visibility') visibility = 'hidden';
   @Input() @HostBinding('style.width') width = '288px';
-
+  @Input() links: any[];
   constructor() { }
 
   ngOnInit(): void {

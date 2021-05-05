@@ -1,6 +1,6 @@
 @import "src/styles.less";
 
-header {
+:host {
   height: 72px;
   background-color: @primary-dark-blue-green;
   display: flex;
@@ -11,13 +11,9 @@ header {
   color: white;
 }
 
-.menu-button {
+.popout-menu {
   display: none;
 }
-
-//.mobile-nav-modal {
-//  display:none;
-//}
 
 a {
   text-decoration: none;
@@ -27,26 +23,19 @@ a {
 }
 
 @media screen and (max-width: @mobile-device-max-width) {
-  header{
+  :host{
     justify-content: center;
-    padding: 0;
+    padding: 0 0 0;
   }
 
-  .menu-button {
+  .popout-menu {
     display: inline;
-    position: static;
-    left: 1em;
+    position: absolute;
+    left: 32px;
   }
-
-  //.mobile-nav-modal {
-  //  display: flex;
-  //  flex-direction: column;
-  //  top: 72px;
-  //  height: 224px;
-  //
-  //}
 
   .large-device-nav {
     display: none;
   }
+
 }

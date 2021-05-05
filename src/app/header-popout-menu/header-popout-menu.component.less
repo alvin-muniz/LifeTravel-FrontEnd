@@ -1,3 +1,5 @@
+@import "src/styles.less";
+
 :host {
   border: 1px solid black;
   position: absolute;
@@ -6,5 +8,17 @@
   left: 0px;
   z-index: 999;
   cursor: pointer;
-  background: white;
+  background: @light-sea-green-color;
+}
+
+.menu {
+  font-size: @third-heirarchy;
+  margin: 16px
+  @mobile-device-margin
+  0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
 }
