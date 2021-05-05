@@ -41,6 +41,15 @@ option to those who are wanting it.
 For my design i'm segmenting the view into a cities list as well as a citiy 
 detail view. Each will pull from the other
 
+I created a pop out menu for mobile devices so that when the view comes to 
+be less than a certain amount the user is able to work toggle the navigation.
+Following this tutorial I was able to devise a component for the menu that 
+is usable for this purpose.
+https://mobiarch.wordpress.com/2018/07/07/create-a-popup-menu-in-angular/
+
+Animations:
+https://angular.io/guide/animations
+
 
 Sprint 2: HomePage
 A user should be able to:
