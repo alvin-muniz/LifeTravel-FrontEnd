@@ -1,0 +1,22 @@
+version: '3.4'
+
+x-healthcheck-defaults: &default-healthchecks
+  interval: 30s
+  timeout: 10s
+  retries: 3
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        PORT: 4200
+    command: yarn serve:webclient
+    volumes:
+      - ./:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - '4200:4200'
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:4200']
+      <<: *default-healthchecks
