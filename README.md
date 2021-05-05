@@ -77,6 +77,17 @@ Call Open Weather API for each city to display the current weather on each city'
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+To run in docker, run yarn in your terminal and then docker-compose up.
+This will build your image and also run the server in a near production 
+environment.
+
+**I found that occasionally, I would need to restart docker because of a 
+timeout error. Please try that if you experieince a timeout when docker is 
+doing its magic
+
+This set up is easy to modify to include additional services with the 
+inclusion of the microservices file.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
