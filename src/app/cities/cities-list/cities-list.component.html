@@ -1,5 +1,6 @@
 
 <h2>{{message}}</h2>
 <div *ngFor="let city of cities">
-  <p> {{city.name}}</p>
+  <app-cities-list-card [city] = "city"></app-cities-list-card>
+<!--  <p> {{city.name}}</p>-->
 </div>

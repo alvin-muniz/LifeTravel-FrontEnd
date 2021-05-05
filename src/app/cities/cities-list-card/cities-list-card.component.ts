@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-cities-list-card',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cities-list-card.component.less']
 })
 export class CitiesListCardComponent implements OnInit {
+
+  @Input() city: any;
 
   constructor() { }
 
