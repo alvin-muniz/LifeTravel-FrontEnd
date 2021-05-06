@@ -13,6 +13,8 @@ import { CitiesListComponent } from './cities/cities-list/cities-list.component'
 import { CitiesDetailViewComponent } from './cities/cities-detail-view/cities-detail-view.component';
 import { CitiesListCardComponent } from './cities/cities-list-card/cities-list-card.component';
 import { HeaderPopoutMenuComponent } from './header-popout-menu/header-popout-menu.component';
+import { PostComponent } from './post/post.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HeaderPopoutMenuComponent } from './header-popout-menu/header-popout-me
     CitiesListComponent,
     CitiesDetailViewComponent,
     CitiesListCardComponent,
-    HeaderPopoutMenuComponent
+    HeaderPopoutMenuComponent,
+    PostComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
