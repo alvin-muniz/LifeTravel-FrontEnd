@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-cities-list',
@@ -8,6 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CitiesListComponent implements OnInit {
 
   @Input() cities: any[];
+  @Output() selectedCity = new EventEmitter<any>() ;
 
   get message(): string { return `this list is size of ${this.cities.length}`; }
 
@@ -15,5 +17,11 @@ export class CitiesListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  selectCity(city: any): void {
+    this.selectedCity.emit(city);
+  }
+
+
 
 }

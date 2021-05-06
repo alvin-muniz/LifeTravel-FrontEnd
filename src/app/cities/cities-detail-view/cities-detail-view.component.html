@@ -1,9 +1,14 @@
+<div *ngIf="selectedCity">
 <div class="detail-view-info">
-  <h1>City Name</h1>
+  <h1>{{selectedCity.name}}</h1>
   <img src="#">
 </div>
 
 <div class="postList">
   <h2>What other's are saying:</h2>
   This is a placeholder until component is done
+</div>
+</div>
+<div #elseBlock>
+ Chooose a city to begin your journey!
 </div>

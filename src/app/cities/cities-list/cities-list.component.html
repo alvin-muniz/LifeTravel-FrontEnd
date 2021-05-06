@@ -1,4 +1,6 @@
 
 <h2>{{message}}</h2>
-<app-cities-list-card *ngFor="let city of cities" [city] = "city"></app-cities-list-card>
+<app-cities-list-card *ngFor="let city of cities"
+                      [city] = "city"
+(click)="selectCity(city)"></app-cities-list-card>
 

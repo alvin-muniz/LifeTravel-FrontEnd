@@ -7,19 +7,53 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CitiesComponent implements OnInit {
 
+  // will be refactored through a service
   cities: any[] = [
     {
       name: 'Murphysboro',
       state: 'Alabama',
       landmark: 'Museum of Bama',
-      zip: '38299'
+      zip: '38299',
+      posts: {
+        postOne: {
+          username: 'John',
+          content: 'I had a great trip',
+          date: '01-22-20',
+          photo: 'imageURL'
+        },
+        postTwo: {
+          username: 'Joeseph',
+          content: 'I had a great trip',
+          date: '01-22-20',
+          photo: 'imageURL'
+        }
+      }
     },
     {
-      name: 'Murphysboro',
-      state: 'Alabama',
+      name: 'Alpharetta',
+      state: 'Georgia',
       landmark: 'Museum of Bama',
-      zip: '38299'
-    }];
+      zip: '38299',
+      posts: {
+        postOne: {
+          username: 'John',
+          content: 'I had a great trip',
+          date: '01-22-20',
+          photo: 'imageURL'
+        },
+        postTwo: {
+          username: 'Joeseph',
+          content: 'I had a great trip',
+          date: '01-22-20',
+          photo: 'imageURL'
+        }
+      }
+    }
+  ];
+
+  selectedCity: any;
+
+  setSelectedCity(city: any): void { this.selectedCity = city; }
 
 
   constructor() { }
