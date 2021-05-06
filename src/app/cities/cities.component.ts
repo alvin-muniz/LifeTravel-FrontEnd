@@ -14,7 +14,7 @@ export class CitiesComponent implements OnInit {
       state: 'Alabama',
       landmark: 'Museum of Bama',
       zip: '38299',
-      posts: {
+      posts: [{
         postOne: {
           username: 'John',
           content: 'I had a great trip',
@@ -27,14 +27,14 @@ export class CitiesComponent implements OnInit {
           date: '01-22-20',
           photo: 'imageURL'
         }
-      }
+      }]
     },
     {
       name: 'Alpharetta',
       state: 'Georgia',
       landmark: 'Museum of Bama',
       zip: '38299',
-      posts: {
+      posts: [{
         postOne: {
           username: 'John',
           content: 'I had a great trip',
@@ -47,13 +47,22 @@ export class CitiesComponent implements OnInit {
           date: '01-22-20',
           photo: 'imageURL'
         }
-      }
+      }]
     }
   ];
 
   selectedCity: any;
+  selectedPosts: any[];
 
-  setSelectedCity(city: any): void { this.selectedCity = city; }
+  setSelectedCity(city: any): void {
+    this.selectedCity = city;
+    this.selectedPosts = city.posts;
+    // console.log(city.posts);
+    // console.log(this.selectedPosts);
+    // for (const post of this.selectedPosts) {
+    //   console.log(post);
+    // }
+  }
 
 
   constructor() { }

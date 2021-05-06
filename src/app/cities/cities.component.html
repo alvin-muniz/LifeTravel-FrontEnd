@@ -1,7 +1,9 @@
 <main>
-  
+
   <app-cities-list [cities] = "cities"
                    (selectedCity)="setSelectedCity($event)"
   ></app-cities-list>
-  <app-cities-detail-view [selectedCity]="selectedCity"></app-cities-detail-view>
+  <app-cities-detail-view
+    [selectedCity]="selectedCity"
+    [selectedPosts]="selectedPosts"></app-cities-detail-view>
 </main>

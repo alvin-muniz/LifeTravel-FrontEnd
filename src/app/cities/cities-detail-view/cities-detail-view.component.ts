@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CitiesDetailViewComponent implements OnInit {
 
   @Input() selectedCity: any;
+  @Input() selectedPosts: any[];
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
-  post = {
-    username: 'John',
-    content: 'I had a great trip',
-    date: '01-22-20',
-    photo: 'imageURL'
-  };
+  @Input() post: any;
+  // = {
+  //   username: 'John',
+  //   content: 'I had a great trip',
+  //   date: '01-22-20',
+  //   photo: 'imageURL'
+  // };
 
   constructor() { }
 
