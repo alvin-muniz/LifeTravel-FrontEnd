@@ -15,18 +15,16 @@ export class CitiesComponent implements OnInit {
       landmark: 'Museum of Bama',
       zip: '38299',
       posts: [{
-        postOne: {
           username: 'John',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
         },
-        postTwo: {
+         {
           username: 'Joeseph',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
-        }
       }]
     },
     {
@@ -35,18 +33,16 @@ export class CitiesComponent implements OnInit {
       landmark: 'Museum of Bama',
       zip: '38299',
       posts: [{
-        postOne: {
           username: 'John',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
         },
-        postTwo: {
+        {
           username: 'Joeseph',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
-        }
       }]
     }
   ];
@@ -57,11 +53,7 @@ export class CitiesComponent implements OnInit {
   setSelectedCity(city: any): void {
     this.selectedCity = city;
     this.selectedPosts = city.posts;
-    // console.log(city.posts);
-    // console.log(this.selectedPosts);
-    // for (const post of this.selectedPosts) {
-    //   console.log(post);
-    // }
+
   }
 
 
