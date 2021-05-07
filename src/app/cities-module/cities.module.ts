@@ -7,6 +7,8 @@ import {CitiesListCardComponent} from './cities/cities-list-card/cities-list-car
 import {PostComponent} from './post/post.component';
 import {PostListComponent} from './post-list/post-list.component';
 import {RouterModule} from '@angular/router';
+import { PostDetailComponent } from './post-detail/post-detail.component';
+import {PostRoutingModule} from './post-routing/post-routing.module';
 
 
 
@@ -17,7 +19,8 @@ import {RouterModule} from '@angular/router';
     CitiesListComponent,
     CitiesListCardComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    PostDetailComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +32,8 @@ import {RouterModule} from '@angular/router';
     CitiesListComponent,
     CitiesListCardComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    PostRoutingModule
   ]
 })
 export class CitiesModule { }

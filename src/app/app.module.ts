@@ -16,6 +16,7 @@ import { HeaderPopoutMenuComponent } from './header-popout-menu/header-popout-me
 import { PostComponent } from './cities-module/post/post.component';
 import { PostListComponent } from './cities-module/post-list/post-list.component';
 import {CitiesModule} from './cities-module/cities.module';
+import {PostRoutingModule} from './cities-module/post-routing/post-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {CitiesModule} from './cities-module/cities.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CitiesModule
+    CitiesModule,
+    PostRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

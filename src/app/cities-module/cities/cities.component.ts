@@ -17,12 +17,14 @@ export class CitiesComponent implements OnInit{
       landmark: 'Museum of Bama',
       zip: '38299',
       posts: [{
+          id: 1,
           username: 'John',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
         },
          {
+          id: 2,
           username: 'Joeseph',
           content: 'I had a great trip',
           date: '01-22-20',
@@ -36,12 +38,14 @@ export class CitiesComponent implements OnInit{
       landmark: 'Museum of Bama',
       zip: '38299',
       posts: [{
+          id: 1,
           username: 'Betty',
           content: 'I had a great trip',
           date: '01-22-20',
           photo: 'imageURL'
         },
         {
+          id: 2,
           username: 'Jonathan',
           content: 'I had a great trip',
           date: '01-22-20',
@@ -59,17 +63,13 @@ export class CitiesComponent implements OnInit{
   ngOnInit(): void {
     let id: number;
     this.route.paramMap.subscribe((params: ParamMap) => {
-        id = +params.get('id');
+        id = +params.get('cityId');
         console.log("this should be the route id" + id);
       }
     );
-
     this.setCityById(id);
     console.log(this.selectedCity);
-
   }
-
-
 
   setSelectedCity(city: any): void {
     this.selectedCity = city;
