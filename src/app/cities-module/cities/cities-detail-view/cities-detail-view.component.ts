@@ -10,7 +10,9 @@ export class CitiesDetailViewComponent implements OnInit {
   @Input() selectedCity: any;
   @Input() selectedPosts: any[];
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }
