@@ -1,8 +1,17 @@
 <div *ngIf="selectedCity">
 <div class="detail-view-info">
+  <div class="city-info">
   <h1>{{selectedCity.name}}</h1>
+  <section *ngIf="weather">
+    <h3>Here's the weather in {{weather.name}}:</h3>
+    <p>Currently {{weather.weather[0].description}}.</p>
+    <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}} degrees.</p>
+  </section>
+
+  </div>
+
   <img src="{{selectedCity.image}}">
 </div>
-  <app-post-list [posts]="selectedPosts"></app-post-list>
+  <app-post-list [posts]="selectedPosts" [city]="selectedCity"></app-post-list>
 </div>
 

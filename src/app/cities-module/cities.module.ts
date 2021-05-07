@@ -9,6 +9,7 @@ import {PostListComponent} from './post-list/post-list.component';
 import {RouterModule} from '@angular/router';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import {PostRoutingModule} from './post-routing/post-routing.module';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -24,7 +25,8 @@ import {PostRoutingModule} from './post-routing/post-routing.module';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     CitiesComponent,

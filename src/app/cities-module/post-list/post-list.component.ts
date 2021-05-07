@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
+import {newArray} from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-post-list',
@@ -9,6 +10,10 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 export class PostListComponent implements OnInit {
 
   @Input() posts: any[];
+  @Input() city: any;
+
+  searchContent: string;
+  foundContent: any[] = new Array();
 
   cityId: number;
 
@@ -21,6 +26,24 @@ export class PostListComponent implements OnInit {
         console.log("this should be the route id" + this.cityId);
       }
     );
+  }
+
+  resetPosts() {
+    this.posts = this.city.posts;
+  }
+
+  findContent(searchString: string): void {
+    if (searchString.length > 3) {
+      for (const post of this.posts) {
+        if (post.content.includes(searchString)) {
+          this.foundContent.push(post);
+        }
+      }
+      this.posts = this.foundContent;
+    } else if (searchString.length===0 || searchString === " ") {
+      this.foundContent = [];
+      this.resetPosts();
+    }
 
   }
 

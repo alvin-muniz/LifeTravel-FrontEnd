@@ -1,8 +1,12 @@
-<h2>What other's are saying:</h2>
 
+<h2>What other's are saying:</h2>
+<div class="searchField">
+<input [(ngModel)]="searchContent" type="text" placeholder="Search Posts"
+       (keyup.space)="findContent(searchContent)"
+        (keyup.enter)="findContent(searchContent)"/>
+<button (click)="resetPosts()"> Cancel Search</button>
+</div>
 <app-post *ngFor="let post of posts"
           [post]="post"
           [cityId]="cityId">
-<!--          [routerLink]="['/cities/'+cityId+'/post', post.id]-->
-<!--"-->
 </app-post>

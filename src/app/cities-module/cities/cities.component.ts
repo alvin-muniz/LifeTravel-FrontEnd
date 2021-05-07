@@ -20,14 +20,14 @@ export class CitiesComponent implements OnInit{
       posts: [{
           id: 1,
           username: 'John',
-          content: 'I had a great trip',
+          content: 'Opelika, more like I had a great time.',
           date: '01-22-20',
           photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Snowboarding.jpg/1280px-Snowboarding.jpg'
         },
          {
           id: 2,
-          username: 'Joeseph',
-          content: 'I had a great trip',
+          username: 'Joseph',
+          content: 'It aint got nothing wrong wit it',
           date: '01-22-20',
           photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg/1024px-Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg'
       }]
