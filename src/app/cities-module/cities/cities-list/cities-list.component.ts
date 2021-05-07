@@ -11,7 +11,7 @@ export class CitiesListComponent implements OnInit {
   @Input() cities: any[];
   @Output() selectedCity = new EventEmitter<any>() ;
 
-  get message(): string { return `this list is size of ${this.cities.length}`; }
+  get message(): string { return `Cities: ${this.cities.length}`; }
 
   constructor() { }
 

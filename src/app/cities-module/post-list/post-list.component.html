@@ -1,4 +1,8 @@
 <h2>What other's are saying:</h2>
+
 <app-post *ngFor="let post of posts"
           [post]="post"
-          [routerLink]="['/cities/'+cityId+'/post', post.id]" ></app-post>
+          [cityId]="cityId">
+<!--          [routerLink]="['/cities/'+cityId+'/post', post.id]-->
+<!--"-->
+</app-post>

@@ -1,12 +1,8 @@
 <div *ngIf="selectedCity">
 <div class="detail-view-info">
   <h1>{{selectedCity.name}}</h1>
-  <img src="#">
+  <img src="{{selectedCity.image}}">
 </div>
-
   <app-post-list [posts]="selectedPosts"></app-post-list>
+</div>
 
-</div>
-<div #elseBlock>
- Chooose a city to begin your journey!
-</div>

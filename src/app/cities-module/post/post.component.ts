@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-post',
@@ -8,6 +9,11 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PostComponent implements OnInit {
 
   @Input() post: any;
+  @Input() cityId: number;
+
+  showDetails = false;
+  location: string;
+
   // = {
   //   username: 'John',
   //   content: 'I had a great trip',
@@ -15,9 +21,14 @@ export class PostComponent implements OnInit {
   //   photo: 'imageURL'
   // };
 
-  constructor() { }
+  constructor(private route: Router) {
+    this.location = route.url;
+  }
 
   ngOnInit(): void {
   }
+
+
+
 
 }
