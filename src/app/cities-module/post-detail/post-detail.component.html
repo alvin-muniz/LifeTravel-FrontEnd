@@ -1,7 +1,18 @@
-<p>{{city.name}}{{post.username}}
-  <img src="{{post.photo}}" >
-  {{post.username}}
-  <a routerLink='/cities/{{cityId}}/'>Back to City Page </a>
-  {{post.date}}
 
-</p>
+<div class="detail-view-info">
+  <div class="review-meta-data">
+  <h1>{{city.name}}</h1>
+  Review submitted by {{post.username}}<br>
+  On {{post.date}}
+  </div>
+  <img src="{{post.photo}}" >
+</div>
+<div class="content">
+  {{post.content}}
+</div>
+<a routerLink='/cities/{{cityId}}/'>Back to City Page </a>
+
+
+
+
+

@@ -1,4 +1,7 @@
 <img src="{{post.photo}}" >
-{{post.username}}
-<a routerLink='/cities/{{cityId}}/post/{{post.id}}'>{{post.content}} </a>
-{{post.date}}
+<div class="post-content">
+  <h2><a
+  routerLink='/cities/{{cityId}}/post/{{post.id}}'>{{post.content}} </a>
+  </h2>
+  <h4>By {{post.username}} submitted on {{post.date}}</h4>
+</div>

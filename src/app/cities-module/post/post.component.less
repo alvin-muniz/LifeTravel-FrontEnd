@@ -1,14 +1,37 @@
 @import "src/styles.less";
 
 :host {
-  background-color: @yellow-green-color;
+  background-color: @light-sea-green-color;
+  box-shadow: -5px 5px 3px @primary-dark-blue-green;
+  color: white;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   margin: 8px 0 8px;
+  padding: 16px 32px 16px;
 }
 
 img {
-  margin-right: 8px;
-  width: 189px;
+  margin-right: 32px;
+  width: 100px;
   height: 100px;
+  border-radius: 100px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: @third-heirarchy;
+  font-weight: 800;
+  font-style: italic;
+  color: white;
+}
+h2 a {
+  text-decoration: none;
+  color: @yellow-green-color;
 }

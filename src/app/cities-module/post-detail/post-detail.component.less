@@ -1,14 +1,49 @@
 @import "src/styles.less";
 
 :host {
+  background-color: white;
+  box-shadow: -5px 5px 7px 2px @primary-dark-blue-green;
+  color: @primary-dark-blue-green;
+  border-radius: 16px;
   width: 860px;
   height: 447px;
-  background-color: rebeccapurple;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   margin:
     120px
     292px
     120px;
+  padding:
+    36px
+    110px
+    36px;
+}
+
+.detail-view-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+h1 {
+  margin: 0;
+  font-size: @second-heirarchy;
+  font-weight: 900;
+  font-style: italic;
+}
+
+img {
+  height: 208px;
+  width: 327px;
+}
+
+.content {
+  margin:
+    16px
+    0
+    16px;
 }
