@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ActivatedRoute, ParamMap} from '@angular/router';
+import {DataService} from '../../shared/data.service';
 
 @Component({
   selector: 'app-cities',
@@ -9,60 +10,19 @@ import {ActivatedRoute, ParamMap} from '@angular/router';
 export class CitiesComponent implements OnInit{
 
   // will be refactored through a service
-  cities: any[] = [
-    {
-      id: 1,
-      name: 'Opelika',
-      state: 'Alabama',
-      landmark: 'The old general store',
-      zip: '36804',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Railroad_Avenue_Historic_District_Opelika_Alabama.JPG/1024px-Railroad_Avenue_Historic_District_Opelika_Alabama.JPG',
-      posts: [{
-          id: 1,
-          username: 'John',
-          content: 'Opelika, more like I had a great time.',
-          date: '01-22-20',
-          photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Snowboarding.jpg/1280px-Snowboarding.jpg'
-        },
-         {
-          id: 2,
-          username: 'Joseph',
-          content: 'It aint got nothing wrong wit it',
-          date: '01-22-20',
-          photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg/1024px-Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg'
-      }]
-    },
-    {
-      id: 2,
-      name: 'Alpharetta',
-      state: 'Georgia',
-      landmark: 'Museum of Bama',
-      zip: '38299',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Railroad_Avenue_Historic_District_Opelika_Alabama.JPG/1024px-Railroad_Avenue_Historic_District_Opelika_Alabama.JPG',
-      posts: [{
-          id: 1,
-          username: 'Betty',
-          content: 'I had a great trip',
-          date: '01-22-20',
-           photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Snowboarding.jpg/1280px-Snowboarding.jpg'
-        },
-        {
-          id: 2,
-          username: 'Jonathan',
-          content: 'I had a great trip',
-          date: '01-22-20',
-          photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg/1024px-Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg'
-      }]
-    }
-  ];
+  cities: any[];
 
   selectedCity: any;
   selectedPosts: any[];
 
-  constructor( private route: ActivatedRoute) {
+  constructor( private route: ActivatedRoute,
+               private dataService: DataService) {
   }
 
   ngOnInit(): void {
+    // load cities
+    this.cities = this.dataService.cities;
+
     let id: number;
     this.route.paramMap.subscribe((params: ParamMap) => {
         id = +params.get('cityId');
@@ -71,6 +31,7 @@ export class CitiesComponent implements OnInit{
     );
     this.setCityById(id);
     console.log(this.selectedCity);
+
   }
 
   setSelectedCity(city: any): void {

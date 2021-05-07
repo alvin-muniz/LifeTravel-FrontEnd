@@ -18,10 +18,7 @@ export class CitiesDetailViewComponent implements OnInit {
   weather: any;
   searchSubject = new Subject();
 
-
-  constructor(private weatherService: WeatherService) {
-
-  }
+  constructor(private weatherService: WeatherService) { }
 
   findWeather(foundZip): void{
     this.searchSubject.next(foundZip);

@@ -10,7 +10,7 @@ export class WeatherService {
 
   createWeatherObservable(zip): any{
     return this.http
-      .get<any>(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=052f26926ae9784c2d677ca7bc5dec98&&units=imperial`);
+      .get<any>(`http://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=ffe203e68f45bbb488ed05b65cb0d682&&units=imperial`);
   }
 
 }

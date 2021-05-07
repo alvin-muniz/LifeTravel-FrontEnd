@@ -26,14 +26,14 @@ export class JumbotronComponent implements OnInit {
             }
           }
       } else {
-        for(const city of this.dataService.cities)
+        for ( const city of this.dataService.cities )
         {
           if (city.zip === cityName)
           {
             console.log('zip code exists');
           } else {
-            console.log('zip code does not exists')
-          };
+            console.log('zip code does not exists');
+          }
         }
       }
   }
