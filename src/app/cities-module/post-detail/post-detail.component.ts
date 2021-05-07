@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PostService} from '../../shared/post.service';
+import {DataService} from '../../shared/data.service';
 import {ActivatedRoute, ParamMap} from '@angular/router';
 
 @Component({
@@ -14,7 +14,7 @@ export class PostDetailComponent implements OnInit {
   cityId: number;
   id: number;
 
-  constructor(private postService: PostService, private route: ActivatedRoute) { }
+  constructor(private postService: DataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {

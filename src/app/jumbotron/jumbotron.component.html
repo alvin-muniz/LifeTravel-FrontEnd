@@ -1,4 +1,13 @@
-<div class="jumbotron"></div>
+<div class="jumbotron">
+  <h1>See What Other’s are saying <br>
+    <div>about
+    <input [(ngModel)]="searchCityName" type="text"
+           placeholder="Enter City or Zip Code"
+           (keyup.enter)="findCity(searchCityName)"/>
+    </div>
+  </h1> <br>
+  <a routerLink="/cities" href="#"><h3>Browse all of our cities</h3></a>
+</div>
 <main class="lead">
 <h1>way<span class="midDot">&#183;</span>far<span class="midDot">&#183;</span>er <br>
 </h1>

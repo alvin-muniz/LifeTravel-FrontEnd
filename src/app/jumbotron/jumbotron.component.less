@@ -3,6 +3,28 @@
 .jumbotron {
   height: 352px;
   background-color: @yellow-green-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: @primary-dark-blue-green
+}
+
+.jumbotron h1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: @yellow-green-color;
+  border: 1px;
+  font-size: @first-hierarchy;
+
 }
 
 main {
@@ -21,11 +43,20 @@ h1 {
   padding: 0;
   margin: 0 0 0 0;
   font-size: @first-hierarchy;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   font-size: @second-heirarchy;
   margin: 0 0 0 0;
+}
+
+h3 {
+  font-size: @third-heirarchy;
+  margin: 0;
 }
 
 //Mobile Design Styling

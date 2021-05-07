@@ -18,6 +18,7 @@ import { PostListComponent } from './cities-module/post-list/post-list.component
 import {CitiesModule} from './cities-module/cities.module';
 import {PostRoutingModule} from './cities-module/post-routing/post-routing.module';
 import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserAnimationsModule,
     CitiesModule,
     PostRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
